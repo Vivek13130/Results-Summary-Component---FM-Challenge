@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+      --Light-red: hsl(0, 100%, 67%);
+      --Orangey-yellow: hsl(39, 100%, 56%);
+      --Green-teal: hsl(166, 100%, 37%);
+      --Cobalt-blue: hsl(234, 85%, 45%);
+
+      --Light-slate-blue-background: hsl(252, 100%, 67%);
+      --Light-royal-blue-background: hsl(241, 81%, 54%);
+      --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+      --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+      --White: hsl(0, 0%, 100%);
+      --Pale-blue: hsl(221, 100%, 96%);
+      --Light-lavender: hsl(241, 100%, 89%);
+      --Dark-gray-blue: hsl(224, 30%, 27%);
+  }
+
+*{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-size: 18px;
+}
+
+body{
+      background-color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      
+}
+
+main{
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 2rem;
+      overflow: hidden;
+      box-shadow: 10px 10px 20px rgba(30, 143, 255, 0.251);
+}
+
+
+#result{
+      background-image: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 350px;
+      border-radius: 1.5rem;
+      overflow: hidden;
+
+      color: white;
+}
+
+
+#top-p{
+      margin: 1.5rem;
+      color: var(--Light-lavender);
+      font-weight: 600;
+}
+
+#circle{
+      background-image: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+      text-align: center;
+      height: 9rem;
+      width: 9rem;
+      padding: 1.4rem 1rem 1rem 1rem;
+      border-radius: 50%;
+}
+
+#p1{
+      font-size: 3.5rem;
+      font-weight: 800;
+}
+
+#p2{
+      color: hsl(234, 55%, 74%);
+}
+
+#mid-p{
+      font-size: 1.5rem;
+      margin: 1.5rem ;
+      font-weight: 700;
+}
+
+#bottom-p{
+      margin: 0rem 2.5rem 2rem 2.5rem;
+      text-align: center;
+      color: var(--Light-lavender);
+
+}
+
+/* ---------------------------------SUMMARY----------------------------*/
+
+#summary{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 350px;
+      padding: 1rem 2rem 1rem 2rem;
+}
+
+#summary h2{
+      font-size: 1.4rem;
+      margin: 0.7rem 0rem 1.4rem 0rem;
+}
+
+#blocks{
+      width: 100%;
+}
+
+.block{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.1rem;
+      width: 100%;
+
+      border-radius: 0.7rem;
+      padding-right: 10px;
+}
+
+.insideblock{
+      display: flex;
+      align-items: center;
+}
+
+.insideblock img{
+      padding: 15px 10px 15px 10px;
+}
+
+.block_marks{
+      color: hsl(223, 27%, 29%);
+      font-weight: 600;
+}
+
+.block_marks span{
+      font-weight: 800;
+      color: black;
+}
+
+#block_name1 p{
+      color: var(--Light-red);
+      font-weight: 700;
+}
+
+#block_name2 p{
+      color: var(--Orangey-yellow);
+      font-weight: 700;
+}
+
+#block_name3 p{
+      color: var(--Green-teal);
+      font-weight: 700;
+}
+
+#block_name4 p{
+      color: var(--Cobalt-blue);
+      font-weight: 700;
+}
+
+#block1{
+      background-color:hsla(0, 100%, 67%, 0.08) ;
+}
+
+#block2{
+      background-color: hsla(39, 100%, 56%, 0.08);
+}
+#block3{
+      background-color: hsla(166, 100%, 37%, 0.08);
+}
+#block4{
+      background-color: hsla(234, 85%, 45%, 0.08);
+}
+
+#button{
+      width: 100%;
+      padding: 0.65rem;
+      border-radius: 1.5rem;
+      border: none;
+      background-color: var(--Dark-gray-blue);
+      color: white;
+      margin: 1rem 0rem;
+      cursor: pointer;
+}
+
+
+.attribution{
+      position: absolute;
+      bottom: 1rem;
+      z-index: -1;
+      text-align: center;
+}
+
+
+@media (max-width: 700px) {
+      main{
+            max-width: 350px;
+            border-radius: 0rem ;
+      }
+
+      #result{
+            border-radius: 0rem 0rem 1.5rem 1.5rem;
+      }
+
+      .attribution{
+            opacity: 0;
+      }
+}
